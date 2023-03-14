@@ -55,6 +55,8 @@ namespace fans
             third.Transitions['1'] = third;
             pos.Transitions['0'] = neg;
             pos.Transitions['1'] = pos;
+            neg.Transitions['0'] = neg;
+            neg.Transitions['1'] = neg;
         }
 
         public bool? Run(IEnumerable<char> str)
